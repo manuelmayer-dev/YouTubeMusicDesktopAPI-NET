@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Title>YouTubeMusicDesktopAPI-NET</Title>
+        <PackageId>ManuelMayer.YouTubeMusicDesktopAPI-NET</PackageId>
+    </PropertyGroup>
+
+</Project>

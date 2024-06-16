@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0DC449B8-F067-4325-9510-69CE880AE33C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeMusicDesktopAPI-NET", "src\YouTubeMusicDesktopAPI-NET\YouTubeMusicDesktopAPI-NET.csproj", "{37A99D85-D985-4E7C-A136-FDF77F3A89CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{866E493E-5512-47ED-AFE8-B7A0F9FA147A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeMusicDesktopCLI", "YouTubeMusicDesktopCLI\YouTubeMusicDesktopCLI.csproj", "{C957C134-7638-467F-A791-AD34AA13F3DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{DB36B1FE-993E-4752-80EB-552D08686D9B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{480F1BAD-3609-4E7B-99FC-F445BF7937CF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish-nuget.yml = .github\workflows\publish-nuget.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37A99D85-D985-4E7C-A136-FDF77F3A89CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A99D85-D985-4E7C-A136-FDF77F3A89CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A99D85-D985-4E7C-A136-FDF77F3A89CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A99D85-D985-4E7C-A136-FDF77F3A89CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C957C134-7638-467F-A791-AD34AA13F3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C957C134-7638-467F-A791-AD34AA13F3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C957C134-7638-467F-A791-AD34AA13F3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C957C134-7638-467F-A791-AD34AA13F3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37A99D85-D985-4E7C-A136-FDF77F3A89CD} = {0DC449B8-F067-4325-9510-69CE880AE33C}
+		{C957C134-7638-467F-A791-AD34AA13F3DE} = {866E493E-5512-47ED-AFE8-B7A0F9FA147A}
+	EndGlobalSection
+EndGlobal

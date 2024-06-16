@@ -1,0 +1,19 @@
+<Project>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <WarningsAsErrors>CS8602</WarningsAsErrors>
+        <Authors>Manuel Mayer</Authors>
+        <Copyright>Manuel Mayer</Copyright>
+        <PackageId>ManuelMayer.YouTubeMusicDesktopAPI-NET</PackageId>
+        <PackageProjectUrl>https://github.com/manuelmayer-dev/YouTubeMusicDesktopAPI-NET</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/manuelmayer-dev/YouTubeMusicDesktopAPI-NET/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/manuelmayer-dev/YouTubeMusicDesktopAPI-NET</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>YouTube, YouTube Music, Music, API</PackageTags>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+</Project>

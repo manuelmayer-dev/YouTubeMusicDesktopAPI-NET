@@ -1,0 +1,35 @@
+name: NuGet Package
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'
+
+      - name: Restore dependencies
+        run: |
+          dotnet restore src/YouTubeMusicDesktopAPI-NET/YouTubeMusicDesktopAPI-NET.csproj
+
+      - name: Build projects
+        run: |
+          dotnet build src/YouTubeMusicDesktopAPI-NET/YouTubeMusicDesktopAPI-NET.csproj --configuration Release
+
+      - name: Create NuGet packages
+        run: |
+          dotnet pack src/YouTubeMusicDesktopAPI-NET/YouTubeMusicDesktopAPI-NET.csproj --configuration Release --output output
+
+      - name: Publish NuGet packages
+        run: |
+          dotnet nuget push output/*.nupkg -k ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
