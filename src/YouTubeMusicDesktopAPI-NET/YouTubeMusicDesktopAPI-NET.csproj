@@ -4,5 +4,13 @@
         <Title>YouTubeMusicDesktopAPI-NET</Title>
         <PackageId>ManuelMayer.YouTubeMusicDesktopAPI-NET</PackageId>
     </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
 </Project>
